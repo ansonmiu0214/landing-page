@@ -2,13 +2,17 @@
 
 {% block content %}
 
-  <header class="screen-reader-text">
-    <h1>{{ page.params.title }}</h1>
-  </header>
-
+<header class="post-header inner-sm">
+  <h1 class="post-title underline">{{ page.params.title }}</h1>
+  {% if page.params.subtitle %}
+  <div class="post-subtitle inner-sm">
+    {{ page.params.subtitle | safe }}
+  </div>
+  {% endif %}
+</header>
   <div class="post-feed">
     <div class="post-feed-inside">
-      {% set display_posts = getPages("/posts") | sort(true, true, "date") %}
+      {% set display_posts = getPages("/trips") | sort(true, true, "date") %}
       {% for post in display_posts %}
       <article class="post post-card">
         <div class="post-inside">
