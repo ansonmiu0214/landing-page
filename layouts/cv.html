@@ -1,0 +1,65 @@
+{% extends "body.html" %}
+
+{% block content %}
+
+  <header class="entry-header underline">
+    <h1>{{ page.params.title }}</h1>
+  </header>
+
+  <div class="entry-feed">
+    <div class="entry-feed-inside">
+      {% set entries = getPages('/' + page.filename) | sort(true, true, "end_date") %}
+      {% for entry in entries %}
+      {% set present = entry.params.end_date is none %}
+      <article class="entry entry-card">
+        <div {{ classNames({'entry-inside': true, 'present': present})}}>
+          <header class="entry-header">
+            <div class="entry-main">
+              <div class="entry-title">
+                <h5>{{ entry.params.title }}</h5>
+              </div>
+              <div class="entry-location">
+                <i class="fas fa-map-marker-alt"></i>
+                {{ entry.params.location }}
+              </div>
+              <div class="entry-subheading">
+                <i class="fas {{ page.params.icon }}"></i>
+                <strong>{{ entry.params.subheading }}</strong>
+              </div>
+              <div class="project-tech">
+                {% for tech in entry.params.tech %}
+                <span class="tech">{{ tech }}</span>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="entry-date">
+              {% if present %}
+              {{ entry.params.start_date | date_format("%b %Y") }} - Present
+              {% else %}
+              {{ entry.params.start_date | date_format("%b %Y") }} - {{ entry.params.end_date | date_format("%b %Y") }}
+              {% endif %}
+            </div>
+          </header><!-- .entry-header -->
+          <div class="entry-content">
+            {{ entry.content }}
+          </div>
+          <footer class="entry-meta">
+            <!-- <time class="published"
+              datetime="{{entry.end_date | date_format("%Y-%m-%d %H:%M") }}">{{ entry.end_date | date_format("%B %d, %Y") }}</time> -->
+          </footer>
+        </div>
+      </article><!-- .entry -->
+      {% endfor %}
+    </div>
+  </div><!-- .entry-feed -->
+
+  <!-- Pagination TBD -->
+  <!--
+  <nav class="pagination inner-sm">
+    <a class="older-entrys button button-icon" href="#"><span class="icon-arrow-left" aria-hidden="true"></span><span class="screen-reader-text">Older entrys</span></a>
+    <span class="page-number">Page X of Y</span>
+    <a class="newer-entrys button button-icon" href="#"><span class="screen-reader-text">Newer entrys</span><span class="icon-arrow-right" aria-hidden="true"></span></a>
+  </nav>
+  -->
+
+{% endblock %}
