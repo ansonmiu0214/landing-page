@@ -1,64 +1,74 @@
 baseurl: "/"
-title: "Stackbit Fresh Theme"
+title: "Anson Miu"
 page_load_js: "assets/js/main.js"
 params:
   description: Personal blogging theme for Stackbit
   layout_style: overflow
   palette: blue
   header:
-    title: "Stackbit Fresh"
-    tagline: Header Tagline
-    profile_img: images/avatar.png
+    title: "Anson Miu"
+    tagline: Developer. Road Trip Enthusiast.
+    profile_img: images/avatar.jpg
     background: dark
     has_nav: true
     nav_links:
-      - label: Home
+      - label: About
         url: /
         style: link
-      - label: Blog
-        url: /blog/
+      - label: Education
+        url: /education/
         style: link
-      - label: Style Guide
-        url: /style-guide/
+      - label: Work Experience
+        url: /work/
         style: link
-      - label: About
-        url: /about/
+      - label: Projects
+        url: /projects/
         style: link
-      - label: Contact
-        url: /contact/
+      - label: Travels
+        url: /travels/
         style: link
+      # - label: Style Guide
+      #   url: /style-guide/
+      #   style: link
+      # - label: Contact
+      #   url: /contact/
+      #   style: link
     has_social: true
     social_links:
-      - label: Twitter
-        url: https://twitter.com/
-        style: icon
-        icon_class: fa-twitter
-        new_window: true
-      - label: Instagram
-        url: https://www.instagram.com/
-        style: icon
-        icon_class: fa-instagram
-        new_window: true
+      # - label: Twitter
+      #   url: https://twitter.com/
+      #   style: icon
+      #   icon_class: fab fa-twitter
+      #   new_window: true
+      # - label: Instagram
+      #   url: https://www.instagram.com/
+      #   style: icon
+      #   icon_class: fab fa-instagram
+      #   new_window: true
       - label: GitHub
-        url: https://github.com/
+        url: https://github.com/ansonmiu2014
         style: icon
-        icon_class: fa-github
+        icon_class: fab fa-github
         new_window: true
       - label: LinkedIn
-        url: https://www.linkedin.com/
+        url: https://www.linkedin.com/in/ansonmiu
         style: icon
-        icon_class: fa-linkedin
+        icon_class: fab fa-linkedin
         new_window: true
-      - label: DEV
-        url: https://dev.to/
+      - label: Email
+        url: mailto:me@ansonmiu.dev
         style: icon
-        icon_class: fa-dev
-        new_window: true
+        icon_class: fas fa-envelope
+      # - label: DEV
+      #   url: https://dev.to/
+      #   style: icon
+      #   icon_class: fab fa-dev
+      #   new_window: true
   footer:
     content: "&copy; All rights reserved."
     links:
-      - label: Made with Stackbit.
-        url: https://www.stackbit.com
+      - label: Made with Fresh.
+        url: https://github.com/stackbithq/stackbit-theme-fresh
         style: link
         new_window: true
 sass:
