@@ -4,7 +4,7 @@
   "description": "A personal theme with a blog for Stackbit",
   "main": "public/index.html",
   "scripts": {
-    "build": "unibit build",
+    "build": "unibit build -o build",
     "develop": "unibit develop",
     "start": "unibit develop",
     "test": "echo \"Error: no test specified\" && exit 1"
