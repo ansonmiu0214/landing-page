@@ -10,8 +10,8 @@ pageLayoutKey: layout
 metadata:
   title: Fresh
   description: A personal theme with a blog
-  author: Stackbit
-  authorURL: 'https://www.stackbit.com'
+  author: Anson Miu
+  authorURL: 'https://ansonmiu.dev'
   images:
     small: images/demo-256x192.png
     large: images/demo-1024x768.png
@@ -490,7 +490,7 @@ models:
         label: Is the field required?
         default: false
 stackbit_banner:
-  show_banner: true
+  show_banner: false
   name: Fresh
   create_url: 'https://app.stackbit.com/create?theme=fresh'
   github_url: 'https://github.com/stackbithq/stackbit-theme-fresh'
