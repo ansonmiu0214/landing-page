@@ -1,0 +1,225 @@
+/**
+ * Project entries
+ */
+.project {
+  margin-bottom: 3.33333em;
+  position: relative;
+}
+
+.tech {
+  background: _palette(accent-blue);
+  border: 2px solid _palette(accent-blue);
+  // border-radius: 30px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.888888rem;
+  // line-height: 1.2;
+  // padding: 0.75714em 35px;
+  padding: 0 15px;
+  text-align: center;
+  text-decoration: none;
+  // -webkit-transition: .3s ease;
+  // transition: .3s ease;
+
+  // &:hover,
+  // &:focus,
+  // &:active {
+  //   background: transparent;
+  //   border-color: _palette(accent-blue);
+  //   box-shadow: 0 0 1px 0.5em rgba(_palette(accent-blue),.2);
+  //   color: _palette(secondary);
+  //   outline: 0;
+  //   cursor: default;
+  // }
+}
+
+.project-header {
+  margin-bottom: 1.66667em;
+}
+
+.project-title {
+  font-size: 2.66667em;
+  margin: 0 0 1.66667rem;
+
+  a {
+    border: 0;
+    color: inherit;
+
+    &:hover {
+      color: _palette(accent);
+    }
+  }
+}
+
+.project-subtitle {
+  font-size: 1.33333em;
+  line-height: 1.5;
+}
+
+.project-image {
+  margin-bottom: 1.66667em;
+
+  img {
+    width: 100%;
+  }
+}
+
+// .project-meta {
+//   color: _palette(meta);
+//   font-size: 14px;
+//   letter-spacing: 1px;
+//   line-height: 1.5;
+//   margin-bottom: 1.66667rem;
+//   text-transform: uppercase;
+// }
+
+/* project feed */
+.project-feed-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -0.83333em 1.66667em;
+}
+
+.project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 1.66667em;
+  width: 50%;
+
+  .project-inside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-left: 0.83333em;
+    margin-right: 0.83333em;
+    overflow: hidden;
+  }
+
+  .project-inside.present {
+    border: 1px solid _palette(accent-blue);
+    border-radius: 5px;
+  }
+
+  .project-thumbnail {
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    margin: 0;
+    position: relative;
+    width: 100%;
+
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 66.666%;
+    }
+
+    img {
+      border-radius: 5px 5px 0 0;
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .project-header {
+    margin-bottom: 0.83333rem;
+    padding: 1.33333rem 1.33333rem 0;
+    display: flex;
+    font-size: 1em;
+  }
+
+  .project-main {
+    margin: 0;
+    padding-bottom: 0.83333rem;
+    flex-grow: 1;
+  }
+
+  .project-title {
+    margin: 0;
+    font-size: 1.33333em;
+  }
+
+  .project-content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 16px;
+    padding: 0 1.33333rem;
+
+    strong {
+      color: _palette(beamer-blue);
+    }
+  }
+
+  .project-meta {
+    margin: 0 1.33333rem;
+    padding-bottom: 0.8333333rem;
+    border-bottom: 1px solid _palette(border);
+    font-size: 0.8333333rem;
+
+    .present {
+      border-bottom: none;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-title {
+    font-size: 2.22222em;
+  }
+
+  .project-subtitle {
+    font-size: 1.22222em;
+  }
+
+  .project-feed-inside {
+    margin-left: -1.5vw;
+    margin-right: -1.5vw;
+  }
+
+  .project-card {
+    margin-bottom: 3vw;
+
+    .project-inside {
+      margin-left: 1.5vw;
+      margin-right: 1.5vw;
+    }
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1000px), only screen and (max-width: 600px) {
+  .project-header {
+    flex-direction: column;
+  }
+
+  .project-card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
