@@ -16,35 +16,50 @@
           <header class="project-header">
             <div class="project-main">
               <div class="project-title">
-                <h5>{{ project.params.title }}</h5>
-              </div>
-              <div class="project-location">
-                {{ project.params.subtitle }}
+                <h5>
+                  <a href="{{ project.url | relative_url}}">
+                    {{ project.params.title }}
+                  </a>
+                </h5>
               </div>
               <div class="project-tech">
                 {% for tech in project.params.tech %}
                 <span class="tech">{{ tech }}</span>
                 {% endfor %}
-                <i class="fas {{ page.params.icon }}"></i>
-                <strong>{{ project.params.subheading }}</strong>
               </div>
             </div>
             <div class="project-date">              
               {{ project.params.date | date_format("%b %Y") }}
             </div>
           </header><!-- .project-header -->
-          <div class="project-content">
-            {{ project.content }}
+          <div class="project-content project-exerpt">
+            {{ project.params.exerpt | safe }}
           </div>
           <footer class="project-meta">
             {% if project.params.github %}
+            {% for github in project.params.github %}
             <div>
-              <i class="fab fa-github"></i> <a href="{{ project.params.github.url }}">{{ project.params.github.label }}</a>
+              <i class="fab fa-github"></i> <a href="{{ github.url }}">{{ github.label }}</a>
             </div>
+            {% endfor %}
             {% endif %}
             {% if project.params.team %}
             <div>
-              <i class="fas fa-user-friends"></i> {{ project.params.team | join(', ') }}
+              <i class="fas fa-user-friends"></i> 
+              {% for person in project.params.team %}
+              {% if person.link -%}
+              <a href="{{ person.link }}" target="_blank">{{ person.name }}</a>
+              {%- else -%}
+              {{ person.name }}
+              {%- endif -%}
+              {%- if not loop.last -%}, {%- endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% if project.params.company %}
+            <div>
+              <i class="fas fa-building	"></i> 
+              {{ project.params.company }}
             </div>
             {% endif %}
             {% if project.params.result %}
@@ -52,8 +67,14 @@
               <i class="fas fa-medal"></i> {{ project.params.result | safe }}
             </div>
             {% endif %}
-            <!-- <time class="published"
-              datetime="{{project.end_date | date_format("%Y-%m-%d %H:%M") }}">{{ project.end_date | date_format("%B %d, %Y") }}</time> -->
+            {% if project.params.publications %}
+            {% for publication in project.params.publications %}
+            <div>
+              <i class="fas fa-book	"></i> 
+              <a href="{{ publication.url }}" target="_blank">{{ publication.name }}</a>
+            </div>
+            {% endfor %}
+            {% endif %}
           </footer>
         </div>
       </article><!-- .project -->

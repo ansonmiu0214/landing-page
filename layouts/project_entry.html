@@ -1,0 +1,74 @@
+{% extends "body.html" %}
+
+{% block content %}
+
+  <article class="project page project-full">
+    <header class="project-header inner-sm">
+      <h1 class="project-title underline">
+        {{ page.params.title }}
+      </h1>
+      <div class="project-tech">
+        {% for tech in page.params.tech %}
+        <span class="tech">{{ tech }}</span>
+        {% endfor %}
+      </div>
+    </header>
+    <div class="project-content inner-sm">
+      <div class="project-exerpt">
+        {{ page.params.exerpt | safe }}
+      </div>
+      <div>
+        {{ page.content | safe }}
+      </div>
+    </div>
+    {% if page.params.img_paths %}
+    {% for path in page.params.img_paths %}
+    <div class="project-image">
+      <img src="{{ path | relative_url }}" alt="{{ page.params.title }}" />
+    </div>
+    {% endfor %}
+    {% endif %}
+    <footer class="project-meta inner-sm">
+      {% if page.params.github %}
+      {% for github in page.params.github %}
+      <div>
+        <i class="fab fa-github"></i> <a href="{{ github.url }}">{{ github.label }}</a>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% if page.params.team %}
+      <div>
+        <i class="fas fa-user-friends"></i> 
+        {% for person in page.params.team %}
+        {% if person.link -%}
+        <a href="{{ person.link }}" target="_blank">{{ person.name }}</a>
+        {%- else -%}
+        {{ person.name }}
+        {%- endif -%}
+        {%- if not loop.last -%}, {%- endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if page.params.company %}
+      <div>
+        <i class="fas fa-building	"></i> 
+        {{ page.params.company }}
+      </div>
+      {% endif %}
+      {% if page.params.result %}
+      <div>
+        <i class="fas fa-medal"></i> {{ page.params.result | safe }}
+      </div>
+      {% endif %}
+      {% if page.params.publications %}
+      {% for publication in page.params.publications %}
+      <div>
+        <i class="fas fa-book	"></i> 
+        <a href="{{ publication.url }}" target="_blank">{{ publication.name }}</a>
+      </div>
+      {% endfor %}
+      {% endif %}
+    </footer>
+  </article><!-- .project -->
+
+{% endblock %}

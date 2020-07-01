@@ -8,7 +8,7 @@
 
   <div class="entry-feed">
     <div class="entry-feed-inside">
-      {% set entries = getPages('/' + page.filename) | sort(true, true, "end_date") %}
+      {% set entries = getPages('/' + page.filename) | sort(true, true, "start_date") %}
       {% for entry in entries %}
       {% set present = entry.params.end_date is none %}
       <article class="entry entry-card">

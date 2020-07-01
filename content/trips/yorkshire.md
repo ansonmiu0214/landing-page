@@ -10,7 +10,7 @@ content_img_paths:
   - trips/yorkshire/4.jpeg
   - trips/yorkshire/5.jpeg
   - trips/yorkshire/6.jpeg
-map: 1edPsdSfS4l9y8oeYhPIx7Q04hYgx33Vp
+# map: 1edPsdSfS4l9y8oeYhPIx7Q04hYgx33Vp
 car: Ford Transit Custom, 6-speed MT
 mileage: 485
 ---

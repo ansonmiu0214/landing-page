@@ -9,7 +9,7 @@ content_img_paths:
   - trips/eastanglia/3.jpeg
   - trips/eastanglia/4.jpeg
   - trips/eastanglia/5.jpeg
-map: 1edPsdSfS4l9y8oeYhPIx7Q04hYgx33Vp
+# map: 1edPsdSfS4l9y8oeYhPIx7Q04hYgx33Vp
 car: Mini Cooper 2.0 Hatchback, 6-speed MT
 mileage: 754.3
 ---

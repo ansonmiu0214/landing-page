@@ -1,14 +1,23 @@
 ---
 title: Smallsteps
-subtitle: This is cool
+exerpt: |-
+  An iOS app for stay-at-home mothers to discover and join walking groups around their area.
 date: 2018-06-01
 tech:
   - iOS (Swift)
   - Java
 team:
-  - Omar Todd
-  - Cheryl Chen
-  - Jin Sun Park
+  - name: Omar Todd
+    link: 
+  - name: Cheryl Chen
+    link: https://github.com/chnchryl
+  - name: Jin Sun Park
+    link: 
+github:
+  - label: ansonmiu0214/SmallStepsBackEnd
+    url: 
+  - label: ansonmiu0214/SmallStepsFrontEnd
+    url:
+layout: project_entry
 ---
  
-Small Steps...

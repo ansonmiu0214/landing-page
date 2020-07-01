@@ -5,10 +5,11 @@ subheading: IT Intern, Solutions Centre
 start_date: 2018-07-01
 end_date: 2018-08-31
 tech:
-  - JavaScript
   - AWS
   - iOS (Swift)
   - Java (Android)
+  - Python
+  - JavaScript
 layout: cv_entry
 ---
 

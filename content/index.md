@@ -35,7 +35,7 @@ sections:
   - section_id: recent-posts
     type: section_posts
     title: Recent Travels
-    posts_number: 2
+    posts_number: 4
     actions:
     - label: Travels
       url: travels/index.html

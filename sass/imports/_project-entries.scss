@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.project-exerpt {
+  margin-bottom: 1.33333rem;
+}
+
 .tech {
   background: _palette(accent-blue);
   border: 2px solid _palette(accent-blue);
@@ -43,11 +47,11 @@
   margin: 0 0 1.66667rem;
 
   a {
-    border: 0;
+    // border: 0;
     color: inherit;
 
     &:hover {
-      color: _palette(accent);
+      color: _palette(accent-blue);
     }
   }
 }
@@ -170,7 +174,7 @@
     padding: 0 1.33333rem;
 
     strong {
-      color: _palette(beamer-blue);
+      color: _palette(accent-blue);
     }
   }
 
