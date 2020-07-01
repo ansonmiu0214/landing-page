@@ -32,6 +32,7 @@ sections:
     - label: CV
       url: "files/cv.pdf"
       style: button
+      new_window: true
   - section_id: recent-posts
     type: section_posts
     title: Recent Travels
