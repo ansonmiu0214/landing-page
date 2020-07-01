@@ -1145,7 +1145,7 @@ img {
         border: 0;
         color: inherit; }
         .entry-title a:hover {
-            color: #1de2bc; }
+            color: #10bcf9; }
 
 .entry-subtitle {
     font-size: 1.33333em;
@@ -1278,6 +1278,9 @@ img {
     margin-bottom: 3.33333em;
     position: relative; }
 
+.project-exerpt {
+    margin-bottom: 1.33333rem; }
+
 .tech {
     background: #10bcf9;
     border: 2px solid #10bcf9;
@@ -1296,10 +1299,9 @@ img {
     font-size: 2.66667em;
     margin: 0 0 1.66667rem; }
     .project-title a {
-        border: 0;
         color: inherit; }
         .project-title a:hover {
-            color: #1de2bc; }
+            color: #10bcf9; }
 
 .project-subtitle {
     font-size: 1.33333em;
@@ -1387,7 +1389,7 @@ img {
         font-size: 16px;
         padding: 0 1.33333rem; }
         .project-card .project-content strong {
-            color: #3133B4; }
+            color: #10bcf9; }
     .project-card .project-meta {
         margin: 0 1.33333rem;
         padding-bottom: 0.8333333rem;
