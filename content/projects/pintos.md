@@ -7,10 +7,10 @@ tech:
   - C
 team:
   - name: Eric Zou
-    link:
+    link: https://github.com/WenquanZou
   - name: Omar Todd
-    link: 
+    link: https://github.com/OTodd07
   - name: Seoin Chai
-    link:
+    link: https://github.com/chais1031
 layout: project_entry
 ---

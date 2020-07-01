@@ -6,6 +6,12 @@ start_date: 2016-10-01
 end_date: 2020-06-27
 layout: cv_entry
 exerpt: |-
+  <p>
+  Master's thesis: <em>"Type-safe Web Programming Using Routed Multiparty Session Types in TypeScript"</em>.
+  </p>
+  <p>
+  <strong>85%</strong> degree total, as of Year 3.
+  </p>
   <ul>
   <li>
     <strong>Gloucester Research Limited Prize</strong>, Jul 2018/2019 - academic excellence (top 3)

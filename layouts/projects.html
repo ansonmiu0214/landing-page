@@ -34,6 +34,13 @@
           </header><!-- .project-header -->
           <div class="project-content project-exerpt">
             {{ project.params.exerpt | safe }}
+            {% if project.params.thumb_img_path %}
+            <div class="project-image">
+              <a href="{{ project.url | relative_url }}">
+                <img src="{{ project.params.thumb_img_path | relative_url }}" alt="{{ project.params.title }}" />
+              </a>
+            </div>
+            {% endif %}
           </div>
           <footer class="project-meta">
             {% if project.params.github %}

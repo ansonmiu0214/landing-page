@@ -21,8 +21,8 @@
         {{ page.content | safe }}
       </div>
     </div>
-    {% if page.params.img_paths %}
-    {% for path in page.params.img_paths %}
+    {% if page.params.content_img_paths %}
+    {% for path in page.params.content_img_paths %}
     <div class="project-image">
       <img src="{{ path | relative_url }}" alt="{{ page.params.title }}" />
     </div>

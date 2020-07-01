@@ -1,6 +1,7 @@
 ---
 title: SessionTS
-exerpt: A code generator that generates session type APIs in TypeScript for Node and React.
+exerpt: |-
+  A code generator that generates session type APIs in TypeScript for Node and React, guaranteeing protocol conformance by construction.
 date: 2020-06-18
 tech:
   - TypeScript

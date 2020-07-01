@@ -17,7 +17,10 @@
     {% if page.params.content_img_paths %}
     {% for path in page.params.content_img_paths %}
     <div class="post-image">
-      <img src="{{ path | relative_url }}" alt="{{ page.params.title }}" />
+      {% set full_path = path | replace('.jpeg', '_full.jpeg') %}
+      <a href="{{ full_path | relative_url }}">
+        <img src="{{ path | relative_url }}" alt="{{ page.params.title }}" />
+      </a>
     </div>
     {% endfor %}
     {% endif %}
