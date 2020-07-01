@@ -10,18 +10,21 @@
   margin-bottom: 1.66667em;
 }
 
+.entry-content {
+  strong {
+    // color: _palette(beamer-blue);
+    // color: black;
+    color: _palette(accent-blue);
+  }
+}
+
 .entry-title {
   font-size: 2.66667em;
   margin: 0 0 1.66667rem;
+}
 
-  a {
-    border: 0;
-    color: inherit;
-
-    &:hover {
-      color: _palette(accent-blue);
-    }
-  }
+.entry-exerpt {
+  margin-bottom: 1.33333rem;
 }
 
 .entry-subtitle {
@@ -91,6 +94,7 @@
     border-radius: 5px;
   }
 
+
   .entry-thumbnail {
     border: 0;
     border-radius: 5px 5px 0 0;
@@ -130,10 +134,10 @@
   }
 
   .entry-title {
+    font-size: 1.333333em;
     margin: 0;
-    font-size: 1.33333em;
   }
-
+  
   .entry-content {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;

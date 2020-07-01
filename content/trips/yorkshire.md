@@ -1,6 +1,6 @@
 ---
 title: Yorkshire
-date: 2019-05-28
+date: 2019-05-25
 layout: trip
 thumb_img_path: trips/yorkshire/6.jpeg
 content_img_paths:

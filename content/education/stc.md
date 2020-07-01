@@ -5,14 +5,24 @@ subheading: IB Bilingual Diploma, 44 points
 start_date: 2009-09-01
 end_date: 2016-06-27
 layout: cv_entry
+exerpt: |-
+  <ul>
+  <li>
+    <strong>Carlson Tong Award</strong>, Aug 2016 - highest performance in the IB Bilingual Diploma
+  </li>
+  <li>
+    <strong>Hong Kong Scholarship for Excellence</strong>, Aug 2016
+  </li>
+  </ul>
 ---
-
-* __Carlson Tong Award__, Aug 2016 - highest performance in the IB Bilingual Diploma
-* __Hong Kong Scholarship for Excellence__, Aug 2016
 
 ##### Courses
 
-* Higher-Level
-  * Mathematics, Physics, Economics
+* Higher Level
+  * Mathematics
+  * Physics
+  * Economics
 * Standard-Level
-  * Business Management, English A Language & Literature, Chinese A Language & Literature
+  * Business Management
+  * English A Language & Literature
+  * Chinese A Language & Literature

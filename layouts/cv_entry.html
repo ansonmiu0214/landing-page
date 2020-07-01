@@ -5,9 +5,9 @@
   <article class="entry page entry-full">
     <header class="entry-header inner-sm">
       <h1 class="entry-title underline">{{ page.params.title }}</h1>
-      {% if page.params.subtitle %}
+      {% if page.params.subheading %}
       <div class="entry-subtitle inner-sm">
-        {{ page.params.subtitle | safe }}
+        {{ page.params.subheading | safe }}
       </div>
       {% endif %}
     </header>
@@ -17,7 +17,10 @@
     </div>
     {% endif %}
     <div class="entry-content inner-sm">
-      {{ page.content }}
+      <div class="entry-exerpt">
+        {{ page.exerpt | safe }}
+      </div>
+      {{ page.content | safe }}
     </div>
   </article><!-- .entry -->
 

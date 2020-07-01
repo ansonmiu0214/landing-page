@@ -16,7 +16,11 @@
           <header class="entry-header">
             <div class="entry-main">
               <div class="entry-title">
-                <h5>{{ entry.params.title }}</h5>
+                <h5>
+                  <a href="{{ entry.url | relative_url }}">
+                    {{ entry.params.title }}
+                  </a> 
+                </h5>
               </div>
               <div class="entry-location">
                 <i class="fas fa-map-marker-alt"></i>
@@ -41,7 +45,12 @@
             </div>
           </header><!-- .entry-header -->
           <div class="entry-content">
+            {% if entry.exerpt %}
+            {{ entry.exerpt | safe }}
+            {% else %}
             {{ entry.content }}
+            {% endif %}
+            <!-- {{ entry.content }} -->
           </div>
           <footer class="entry-meta">
             <!-- <time class="published"

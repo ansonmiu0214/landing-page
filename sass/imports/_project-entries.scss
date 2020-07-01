@@ -45,15 +45,6 @@
 .project-title {
   font-size: 2.66667em;
   margin: 0 0 1.66667rem;
-
-  a {
-    // border: 0;
-    color: inherit;
-
-    &:hover {
-      color: _palette(accent-blue);
-    }
-  }
 }
 
 .project-subtitle {
