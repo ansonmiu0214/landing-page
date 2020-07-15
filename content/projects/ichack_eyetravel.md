@@ -8,9 +8,9 @@ tech:
   - Firebase ML
 team:
   - name: Mary Cheng
-    link: https://github.com/chengmar09
+    link: https://www.linkedin.com/in/mary-cheng-0255b5145/
   - name: Sharen Choi
-    link: 
+    link: https://www.linkedin.com/in/sharen-choi/
 github:
   - label: ansonmiu0214/ICHack2019
     url: https://github.com/ansonmiu0214/ICHack2019

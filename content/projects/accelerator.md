@@ -9,11 +9,11 @@ tech:
   - AWS
 team:
   - name: Mary Cheng
-    link: https://github.com/chengmar09
+    link: https://www.linkedin.com/in/mary-cheng-0255b5145/
   - name: Sharen Choi
-    link: 
+    link: https://www.linkedin.com/in/sharen-choi/
   - name: Kero Leung
-    link: 
+    link: https://www.linkedin.com/in/kero-leung-80610013b/
 company: Singapore Airlines
 result: <strong>2nd place</strong> in the SIA AppChallenge 2018 Open Category
 layout: project_entry
