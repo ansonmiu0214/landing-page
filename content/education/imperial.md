@@ -1,16 +1,13 @@
 ---
 title: Imperial College London
 location: London
-subheading: M.Eng. in Computing, First Class (Expected)
+subheading: M.Eng. in Computing, First Class Honours (86%)
 start_date: 2016-10-01
 end_date: 2020-06-27
 layout: cv_entry
 exerpt: |-
   <p>
   Master's thesis: <em>"Type-safe Web Programming Using Routed Multiparty Session Types in TypeScript"</em>.
-  </p>
-  <p>
-  <strong>85%</strong> degree total, as of Year 3.
   </p>
   <ul>
   <li>
@@ -27,7 +24,7 @@ exerpt: |-
 
 ##### Courses
 
-* Year 4
+* Year 4 - __88%__
   * Concurrent Processes
   * Advanced Issues in Object-Oriented Programming
   * Separation Logic
