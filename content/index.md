@@ -6,7 +6,10 @@ sections:
     type: section_hero
     title: Hi, I'm Anson.
     content: |-
-      Final Year Computing Student at Imperial College London
+      💻 Incoming Software Engineer at Bloomberg <br />
+      <small>
+      🎓 Class of 2020, Imperial College London (M.Eng. in Computing)
+      </small>
   - section_id: about
     type: section_content
     title: About
