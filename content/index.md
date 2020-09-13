@@ -8,15 +8,16 @@ sections:
     content: |-
       💻 Incoming Software Engineer at Bloomberg <br />
       <small>
-      🎓 Class of 2020, Imperial College London (M.Eng. in Computing)
+      🎓 Master of Engineering (M.Eng.) in Computing
       </small>
   - section_id: about
     type: section_content
     title: About
     content: |-
-      I am a final year Computing student at Imperial College London.
-      Upon completing my studies, I will be joining Bloomberg in their
-      London offices as a Graduate Software Engineer.
+      I recently graduated from Imperial College London, having obtained my
+      Master of Engineering (M.Eng.) in Computing with First-Class Honours.
+      I will be joining Bloomberg in their
+      London offices as a Software Engineer.
       
       I am particularly interested in __type systems__ and __programming
       language design__.

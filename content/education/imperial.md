@@ -1,17 +1,17 @@
 ---
 title: Imperial College London
 location: London
-subheading: M.Eng. in Computing, First Class Honours (86%)
+subheading: M.Eng. in Computing, First-Class Hons. (86%)
 start_date: 2016-10-01
 end_date: 2020-06-27
 layout: cv_entry
 exerpt: |-
   <p>
-  Master's thesis: <em>"Type-safe Web Programming Using Routed Multiparty Session Types in TypeScript"</em>, 95%.
+  Master's thesis: <strong><a href="https://www.imperial.ac.uk/media/imperial-college/faculty-of-engineering/computing/public/1920-ug-projects/Miu,-Anson-(kcm116).pdf" target="_blank">"Type-safe Web Programming Using Routed Multiparty Session Types in TypeScript"</a></strong> (95%).
   </p>
   <ul>
   <li>
-    <strong>Aspect Capital Prize Computing</strong>, Jul 2020 - outstanding undergraduate final year project
+    <strong>The Aspect Capital Project Prize</strong>, Jul 2020 - outstanding undergraduate final year project
   </li>
   <li>
     <strong>Faculty of Engineering Dean's List</strong>, Jul 2020 - top 10% of cohort
