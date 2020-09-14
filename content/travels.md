@@ -1,4 +1,0 @@
----
-title: Travels
-layout: blog
----
