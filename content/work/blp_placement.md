@@ -10,6 +10,8 @@ tech:
 layout: cv_entry
 ---
 
+Team: __Feeds (Central EU), Software Infrastructure__
+
 Project: __Feeds Handler Code Generator__
 
 * Spearheaded migration to a Python codebase for leveraging Jinja to decouple templates from logic.

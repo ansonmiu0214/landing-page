@@ -6,7 +6,7 @@ sections:
     type: section_hero
     title: Hi, I'm Anson.
     content: |-
-      💻 Incoming Software Engineer at Bloomberg <br />
+      💻 Software Engineer at Bloomberg <br />
       <small>
       🎓 Master of Engineering (M.Eng.) in Computing
       </small>
@@ -14,10 +14,9 @@ sections:
     type: section_content
     title: About
     content: |-
+      I am a Software Engineer in Bloomberg's London offices.
       I recently graduated from Imperial College London, having obtained my
       Master of Engineering (M.Eng.) in Computing with First-Class Honours.
-      I will be joining Bloomberg in their
-      London offices as a Software Engineer.
       
       I am particularly interested in __type systems__ and __programming
       language design__.
